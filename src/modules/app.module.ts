@@ -5,6 +5,7 @@ import { get_mongoose_config } from 'src/config/mongoose.config';
 import security_config from 'src/config/security.config';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { UserModule } from 'src/modules/user.module';
+import { OrderModule } from 'src/modules/order.module';
 
 config()
 
@@ -22,6 +23,7 @@ config()
       inject: [ConfigService],
     }),
     UserModule,
+    OrderModule
   ],
 })
 export class AppModule {}
