@@ -8,7 +8,7 @@ export class IAuditableDto {
   updated_at?: Date;
 }
 
-export class CreateUserResponseTypeDto{
+export class CreateUserResponseTypeDto extends IAuditableDto {
   @ApiProperty()
   id?: number;
 
