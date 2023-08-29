@@ -1,7 +1,5 @@
 import { registerAs } from '@nestjs/config';
 import { config } from 'dotenv';
-import mongoose from 'mongoose';
-import { logger } from 'src/loggers/pino.logger';
 
 config()
 
